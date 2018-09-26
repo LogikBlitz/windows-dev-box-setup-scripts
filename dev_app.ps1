@@ -1,3 +1,4 @@
+
 # Description: Boxstarter Script  
 # Author: Microsoft
 # Common dev settings for desktop app development
@@ -43,8 +44,9 @@ Update-SessionEnvironment #refreshing env due to Git install
 #--- UWP Workload and installing Windows Template Studio ---
 choco install -y visualstudio2017-workload-azure
 choco install -y visualstudio2017-workload-universal
+choco install visualstudio2017-workload-netweb
 executeScript "WindowsTemplateStudio.ps1";
-executeScript "GetUwpSamplesOffGithub.ps1";
+#executeScript "GetUwpSamplesOffGithub.ps1";
 
 #--- reenabling critial items ---
 Enable-UAC
